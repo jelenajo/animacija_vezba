@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+body {
+background: #333;
+}
+.box {
+background: white;
+width: 200px;
+height: 200px;
+position: relative;
+animation: animacija;
+animation-duration: 8s;
+animation-iteration-count: infinite;
+animation-delay: 2s;
+animation-direction: reverse;
+}
+@keyframes animacija {
+0% {
+background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+25% {
+background-color: red left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+50% {
+background-color: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0;}
+75% {
+background-color: blue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+100% {
+background-color: white; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+}
+.box1 {
+width: 200px;
+height: 100px;
+background: red;
+animation: za 4s;
+}
+</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box1"></div>
+
+</body>
+
+
+</html>
